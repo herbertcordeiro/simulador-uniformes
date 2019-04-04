@@ -1,13 +1,13 @@
 <template>
-    <nav class="navbar">
+    <div class="navbar">
         <h4 class="contact">CENTRAL DE ATENDIMENTO</h4>
-        <h4 class="fone">(83) 99634-1333</h4> 
+        <h4 class="phone"><i class="fas fa-phone"></i> (83) 99634-1333</h4> 
         <div class="social">
             <i class="fab fa-facebook-square"></i>        
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter-square"></i>   
         </div> 
-    </nav>
+    </div>
 </template>
 
 <script>
@@ -21,22 +21,25 @@ export default {
         display: grid;
         grid-area: navbar;
         background-color: #ffffff;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(12, 1fr);
         font-size: 0.9em;
         color: #003554;
     }
     .contact {
-        justify-self: end;
+        grid-column: 3 / 6;
         align-self: center;
     }
 
-    .fone {
+    .phone {
+        grid-column: 6 / 8;
         justify-self: center;
         align-self: center;
     }
 
     .social {
+        grid-column: 10;
         font-size: 1.4em;
+        justify-self: end;
         align-self: center;
     }
 
