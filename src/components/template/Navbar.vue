@@ -25,6 +25,7 @@ export default {
         font-size: 0.9em;
         color: #003554;
     }
+    
     .contact {
         grid-column: 3 / 6;
         align-self: center;
