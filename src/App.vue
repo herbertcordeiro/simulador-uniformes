@@ -19,6 +19,7 @@ export default {
   * {
     margin: 0;
     padding: 0;
+    font-family: Bahnschrift;
   }
 
   #app {
@@ -27,7 +28,7 @@ export default {
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 38px 80px 1fr 380px 70px;
+    grid-template-rows: 30px 80px 1fr 380px 70px;
     grid-template-areas: "navbar" "menu"
   }
 
