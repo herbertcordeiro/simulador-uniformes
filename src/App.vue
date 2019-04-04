@@ -1,23 +1,34 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Navbar />
+    <Menu />
   </div>
 </template>
 
 <script>
+import Navbar from '@/components/template/Navbar'
+import Menu from '@/components/template/Menu'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: { Navbar, Menu }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 38px 80px 1fr 380px 70px;
+    grid-template-areas: "navbar" "menu"
+  }
+
 </style>
