@@ -36,7 +36,6 @@ export default {
 </script>
 
 <style>
-
     .menu {
         display: grid;
         grid-area: menu;
@@ -49,6 +48,7 @@ export default {
         align-self: center;
         height: 50px;
     }
+    
     .option {
         grid-column: 6 / 11;
         align-self: center;
@@ -72,5 +72,4 @@ export default {
         color: #ffffff;
         text-decoration: none;
     }
-   
 </style>

@@ -2,16 +2,20 @@
   <div id="app">
     <Navbar />
     <Menu />
+    <Simulador />
+    <Merchandise />
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/template/Navbar'
 import Menu from '@/components/template/Menu'
+import Simulador from '@/components/template/Simulador'
+import Merchandise from '@/components/template/Merchandise'
 
 export default {
   name: 'App',
-  components: { Navbar, Menu }
+  components: { Navbar, Menu, Simulador, Merchandise }
 }
 </script>
 
@@ -28,8 +32,8 @@ export default {
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 30px 80px 1fr 380px 70px;
-    grid-template-areas: "navbar" "menu"
+    grid-template-rows: 30px 80px 1fr 80px 70px;
+    grid-template-areas: "navbar" "menu" "simulador" "merchandise"
   }
 
 </style>
