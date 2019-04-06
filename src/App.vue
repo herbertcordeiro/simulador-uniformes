@@ -27,7 +27,6 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    height: 100vh;
     display: grid;
     grid-template-areas: "navbar" "menu";
   }
@@ -40,7 +39,6 @@ export default {
     --azul-marinho: #051923;
     --fonte-primaria: 'Bahnschrift';
     --fonte-secundaria:'Rubik', sans-serif;
-;
 }
 
 </style>

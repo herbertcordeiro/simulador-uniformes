@@ -30,7 +30,7 @@ export default {
 <style>
     .background { 
         display: grid;
-        height: 70vh;
+        height: 78vh;
         grid-area: background;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(12, 1fr);
@@ -76,7 +76,7 @@ export default {
         color: #ffffff;
         padding: 20px;
         align-self: end;
-
+        letter-spacing: 0.1em;
     }
 
     .det-simulador {
@@ -84,7 +84,7 @@ export default {
     }
 
     .det-catalogo {
-        background-color: var(--azul-cobalto);
+        background-color: var(--azul-indigo);
     }
 
     .det-portfolio {

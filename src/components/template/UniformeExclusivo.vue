@@ -1,0 +1,44 @@
+<template>
+    <div class="container-uniformes">
+        <img class="titulo-uniforme" :src="tituloUniforme">
+        <img class="exemplos-uniformes" :src="uniformes">
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'UniformeExclusivo',
+    data() {
+        return {
+            uniformes: require('@/assets/uniformes.png'),
+            tituloUniforme: require('@/assets/exclusividade.png'),
+        }
+    }
+}
+</script>
+
+<style>
+    .container-uniformes {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-area: container-uniformes;
+        height: 80vh;
+        background-image: 
+            radial-gradient(
+            circle at bottom,
+            var(--azul-cobalto),
+            var(--azul-marinho)
+        );
+    }
+
+   .titulo-uniforme {
+        width: 45vh;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .exemplos-uniformes {
+        width: 90vh;
+        justify-self: center;
+    }
+</style>

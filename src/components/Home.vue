@@ -4,6 +4,7 @@
         <Merchandise />
         <Bandeira />
         <Footer />
+        <UniformeExclusivo />
     </div>
 </template>
 
@@ -13,10 +14,11 @@ import MockupChoice from '@/components/simulator/MockupChoice'
 import Simulador from '@/components/template/Simulador'
 import Merchandise from '@/components/template/Merchandise'
 import Footer from '@/components/template/Footer'
+import UniformeExclusivo from '@/components/template/UniformeExclusivo'
 
 export default {
     name: "Home",
-    components: { MockupChoice, Merchandise, Bandeira, Simulador, Footer}
+    components: { MockupChoice, Merchandise, UniformeExclusivo, Bandeira, Simulador, Footer}
 }
 </script>
 
@@ -24,7 +26,7 @@ export default {
     .home { 
         display: grid;
         height: 100vh;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "background" "merchandise" "itens-disponiveis"
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "background" "merchandise" "container-uniformes" "itens-disponiveis";
     }
 </style>

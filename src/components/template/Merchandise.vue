@@ -1,12 +1,11 @@
 <template>
     <div class="merchandise">
-            <img class="entrega-icon" :src="viaJs">   
+        <img class="entrega-icon" :src="viaJs">   
             <h3 class="entrega">ENTREGAMOS PARA TODO BRASIL</h3>
-            <img class="pagamento-icon" :src="viaJs2"> 
-            <h3 class="juros">ATE 6X SEM JUROS NO CARTAO</h3>
-            <img class="seguranca-icon" :src="viaJs3">
+        <img class="pagamento-icon" :src="viaJs2"> 
+            <h3 class="juros">ATÉ 6x SEM JUROS NO CARTÃO</h3>
+        <img class="seguranca-icon" :src="viaJs3">
             <h3 class="seguranca">COMPRA 100% SEGURA</h3> 
-            
     </div>
 </template>
 
@@ -27,11 +26,12 @@ export default {
     .merchandise { 
         display: grid;
         grid-area: merchandise;
-        height: 20%;
+        height: 100px;
         background-color: white;
         grid-template-columns: repeat(24, 1fr);
         font-size: 0.9em;
         color: #003554;
+        font-family: var(--fonte-primaria);
     }
 
     .entrega-icon {
