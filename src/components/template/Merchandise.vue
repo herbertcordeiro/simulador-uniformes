@@ -27,6 +27,7 @@ export default {
     .merchandise { 
         display: grid;
         grid-area: merchandise;
+        height: 20%;
         background-color: white;
         grid-template-columns: repeat(24, 1fr);
         font-size: 0.9em;

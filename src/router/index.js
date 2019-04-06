@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Navbar from '@/components/template/Navbar'
+import Home from '@/components/Home'
 import MockupChoice from '@/components/simulator/MockupChoice'
 
 
@@ -10,9 +10,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Navbar',
-      component: Navbar
+      name: 'Home',
+      component: Home
     },
-
+    {
+      path: '/mockups',
+      name: 'MockupChoice',
+      component: MockupChoice
+    },
   ]
 })
