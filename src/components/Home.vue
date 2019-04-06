@@ -3,6 +3,7 @@
         <Simulador />
         <Merchandise />
         <Bandeira />
+        <Footer />
     </div>
 </template>
 
@@ -11,9 +12,10 @@ import Bandeira from '@/components/template/Bandeira'
 import MockupChoice from '@/components/simulator/MockupChoice'
 import Simulador from '@/components/template/Simulador'
 import Merchandise from '@/components/template/Merchandise'
+import Footer from '@/components/template/Footer'
 export default {
     name: "Home",
-    components: { MockupChoice, Merchandise, Bandeira, Simulador }
+    components: { MockupChoice, Merchandise, Bandeira, Simulador, Footer}
 }
 </script>
 
