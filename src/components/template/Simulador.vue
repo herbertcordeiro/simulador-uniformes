@@ -1,6 +1,5 @@
 <template>
     <div class="simulador">
-    eqweqweW
     </div>
 </template>
 
@@ -13,7 +12,8 @@ export default {
 <style>
     .simulador { 
         display: grid;
+        height: 500px;
         grid-area: simulador;
-        background-color: red;
+        /* background-color: red; */
     }
 </style>

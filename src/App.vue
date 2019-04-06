@@ -2,7 +2,9 @@
   <div id="app">
     <Navbar />
     <Menu />
-    <Bandeira></Bandeira>
+    <Simulador />
+    <Bandeira />
+    <Merchandise />
     <router-view />
   </div>
 </template>
@@ -12,12 +14,12 @@ import Navbar from '@/components/template/Navbar'
 import Menu from '@/components/template/Menu'
 import Bandeira from '@/components/template/Bandeira'
 import MockupChoice from '@/components/simulator/MockupChoice'
+import Simulador from '@/components/template/Simulador'
+import Merchandise from '@/components/template/Merchandise'
 
 export default {
   name: 'App',
-  components: { Navbar, Menu, MockupChoice, Bandeira },
-  created: function() {
-  }
+  components: { Navbar, Menu, MockupChoice, Merchandise, Bandeira, Simulador },
 }
 </script>
 
@@ -34,8 +36,8 @@ export default {
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 30px 80px 1fr 380px 70px;
-    grid-template-areas: "navbar" "menu"
+    grid-template-rows: 30px 80px 1fr 1fr 1fr;
+    grid-template-areas: "navbar" "menu" "simulador" "merchandise" "itens-disponiveis"
   }
 
 </style>

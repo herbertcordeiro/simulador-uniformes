@@ -32,7 +32,7 @@ export default {
 <style  >
     .itens-disponiveis {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 60% 40%;
         justify-items: stretch;
         align-items: stretch;

@@ -19,7 +19,7 @@
                     <a href="#">PORTFÓLIO</a>
                 </li>
                 <li>
-                    <a href="#">SIMULADOR</a>
+                    <a><router-link :to="{name:'MockupChoice'}">SIMULADOR</router-link></a>
                 </li>
             </ul>
         </nav>
