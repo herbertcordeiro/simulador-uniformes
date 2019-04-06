@@ -17,10 +17,10 @@ export default {
 </script>
 
 <style>
+
   * {
     margin: 0;
     padding: 0;
-    font-family: Bahnschrift;
   }
 
   #app {
@@ -29,8 +29,18 @@ export default {
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 30px 80px 1fr;
-    grid-template-areas: "navbar" "menu"
+    grid-template-areas: "navbar" "menu";
   }
+
+  :root {
+    --azul-celeste: #00A6FB;
+    --azul-indigo: #0582CA;
+    --azul-cobalto: #006494;
+    --azul-prusia: #003554;
+    --azul-marinho: #051923;
+    --fonte-primaria: 'Bahnschrift';
+    --fonte-secundaria:'Rubik', sans-serif;
+;
+}
 
 </style>

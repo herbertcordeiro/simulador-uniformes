@@ -39,8 +39,10 @@ export default {
     .menu {
         display: grid;
         grid-area: menu;
-        background-color: #003554;
+        height: 80px;
+        background-color: var(--azul-prusia);
         grid-template-columns: repeat(12, 1fr);
+        font-family: var(--fonte-primaria);
     }
 
     .image {

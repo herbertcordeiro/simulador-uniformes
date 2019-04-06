@@ -23,7 +23,9 @@ export default {
         background-color: #ffffff;
         grid-template-columns: repeat(12, 1fr);
         font-size: 0.9em;
-        color: #003554;
+        color: var(--azul-prusia);
+        font-family: var(--fonte-primaria);
+        height: 30px;
     }
     
     .contact {
