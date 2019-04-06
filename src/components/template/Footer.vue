@@ -118,6 +118,7 @@ export default {
 }
 
 #conteudo {
+    grid-area: footer;
     background:#04111b;
     height: 250px;
     display: flex;

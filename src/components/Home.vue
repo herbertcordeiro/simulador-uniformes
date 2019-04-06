@@ -2,23 +2,23 @@
     <div class="home">
         <Simulador />
         <Merchandise />
-        <Bandeira />
-        <Footer />
         <UniformeExclusivo />
+        <Bandeiras />
+        <Coletes />
     </div>
 </template>
 
 <script>
-import Bandeira from '@/components/template/Bandeira'
 import MockupChoice from '@/components/simulator/MockupChoice'
 import Simulador from '@/components/template/Simulador'
 import Merchandise from '@/components/template/Merchandise'
-import Footer from '@/components/template/Footer'
 import UniformeExclusivo from '@/components/template/UniformeExclusivo'
+import Bandeiras from '@/components/template/Bandeiras'
+import Coletes from '@/components/template/Coletes'
 
 export default {
     name: "Home",
-    components: { MockupChoice, Merchandise, UniformeExclusivo, Bandeira, Simulador, Footer}
+    components: { MockupChoice, Merchandise, UniformeExclusivo, Simulador, Bandeiras, Coletes }
 }
 </script>
 
@@ -26,7 +26,6 @@ export default {
     .home { 
         display: grid;
         height: 100vh;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "background" "merchandise" "container-uniformes" "itens-disponiveis";
+        grid-template-areas: "background" "merchandise" "container-uniformes" "bandeiras" "coletes";
     }
 </style>
