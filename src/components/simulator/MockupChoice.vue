@@ -1,6 +1,5 @@
 <template>
     <ul>
-        aaaaaaaaaaaaaaaaaa
         {{mockups}}
     </ul>
 </template>
