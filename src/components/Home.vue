@@ -6,7 +6,9 @@
         <Bandeiras />
         <Coletes />
         <Detalhes />
+        <Newsletter />
         <Footer />
+        <Rodape />
     </div>
 </template>
 
@@ -18,11 +20,23 @@ import UniformeExclusivo from '@/components/template/UniformeExclusivo'
 import Bandeiras from '@/components/template/Bandeiras'
 import Coletes from '@/components/template/Coletes'
 import Detalhes from '@/components/template/Detalhes'
+import Newsletter from '@/components/template/Newsletter'
 import Footer from '@/components/template/Footer'
+import Rodape from '@/components/template/Rodape'
 
 export default {
     name: "Home",
-    components: { MockupChoice, Merchandise, UniformeExclusivo, Simulador, Bandeiras, Coletes, Detalhes, Footer}
+    components: { 
+        MockupChoice, 
+        Merchandise, 
+        UniformeExclusivo, 
+        Simulador, 
+        Bandeiras, 
+        Coletes, 
+        Detalhes,
+        Newsletter, 
+        Footer,
+        Rodape }
 }
 </script>
 
@@ -31,6 +45,14 @@ export default {
         display: grid;
         height: 100vh;
         grid-template-areas: 
-            "background" "merchandise" "container-uniformes" "bandeiras" "coletes" "detalhes" "footer";
+            "background" 
+            "merchandise" 
+            "container-uniformes" 
+            "bandeiras" 
+            "coletes" 
+            "detalhes" 
+            "newsletter" 
+            "footer" 
+            "rodape";
     }
 </style>

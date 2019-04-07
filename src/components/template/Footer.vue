@@ -49,7 +49,8 @@ export default {
         display: grid;
         background-color: var(--azul-marinho);
         color: #ffffff;
-        height: 30vh;
+        height: 26vh;
+        grid-area: footer;
         grid-template-columns: repeat(12, 1fr);
         font-family: var(--fonte-primaria);
         font-weight: lighter;
@@ -79,5 +80,4 @@ export default {
     i {
         margin: 10px 10px 0 0;
     }
-
 </style>
