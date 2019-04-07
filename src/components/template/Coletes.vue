@@ -28,7 +28,7 @@ export default {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-area: coletes;
-        height: 60vh;
+        height: 55vh;
         font-family: var(--fonte-primaria);
         background-image: 
             radial-gradient(
@@ -55,4 +55,7 @@ export default {
         font-weight: lighter;
     }
 
+    .titulo-coletes h4 {
+        color: var(--azul-cobalto);
+    }
 </style>

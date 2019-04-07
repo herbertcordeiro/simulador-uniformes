@@ -5,6 +5,7 @@
         <UniformeExclusivo />
         <Bandeiras />
         <Coletes />
+        <Detalhes />
     </div>
 </template>
 
@@ -15,10 +16,11 @@ import Merchandise from '@/components/template/Merchandise'
 import UniformeExclusivo from '@/components/template/UniformeExclusivo'
 import Bandeiras from '@/components/template/Bandeiras'
 import Coletes from '@/components/template/Coletes'
+import Detalhes from '@/components/template/Detalhes'
 
 export default {
     name: "Home",
-    components: { MockupChoice, Merchandise, UniformeExclusivo, Simulador, Bandeiras, Coletes }
+    components: { MockupChoice, Merchandise, UniformeExclusivo, Simulador, Bandeiras, Coletes, Detalhes}
 }
 </script>
 
@@ -26,6 +28,7 @@ export default {
     .home { 
         display: grid;
         height: 100vh;
-        grid-template-areas: "background" "merchandise" "container-uniformes" "bandeiras" "coletes";
+        grid-template-areas: 
+            "background" "merchandise" "container-uniformes" "bandeiras" "coletes" "detalhes";
     }
 </style>
