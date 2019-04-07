@@ -1,32 +1,31 @@
 <template>
-    <div id="conteudo">
-        <div class="item">
-            <div>
-                <button class="bt">SIMULADOR</button><br/><br/>
-            </div>
-             
+    <div class="content-footer">
+        <div class="item-menu">
+            <a href="#" class="btn btn-detalhes">                
+                <h4>SIMULADOR</h4>
+            </a>
             <ul class="ul-links">
                 <li id="links">
-                    <a href="#">EMPRSA</a><br/>
+                    <a href="#">EMPRESA</a><br/>
                     <a href="#">CONTATO</a><br/>
                     <a href="#">UNIFORMES</a><br/>
                     <a href="#">CATÁLOGO</a><br/>
                 </li>
             </ul>
         </div>
-        <div class="item">
+        <div class="item-contato">
             <div class="cont">
-                <p>(83) 99634-1333</p>
-                <p>pranniesporte@hotmail.com</p>
+                <p><i class="fas fa-phone"> </i>(83) 99634-1333</p>
+                <p><i class="far fa-envelope"> </i> padronniesporte@hotmail.com</p>
             </div>
         </div>
-        <div class="item">
+        <div class="item-end">
             <div>
-                <h4 class="hf">ONDE ESTAMOS</h4>
+                <h3 class="titulo">ONDE ESTAMOS</h3>
             </div>
-            <div><p class="pf">Av.João Suassuma, 67</p>
+            <div><p class="pf">Av. João Suassuna, 67</p>
                 <p class="pf">Centro - CEP: 58345-000</p>
-                <p class="pf"> Mari-Paraíba-Brasil</p>
+                <p class="pf">Mari • Paraíba • Brasil</p>
                 <br/>
                 <p class="funcionamento">
                     Seg à sexta das 8h às 17h30<br/>
@@ -41,101 +40,44 @@
 <script>
 export default {
     name: "Footer"
-    
 }
 </script>
 
 <style>
 
-.ul-links{
-    position: relative;
-    top: -5px;
-    left: 100px;
-}
-
-.cont{
-    position: relative;
-    top: 60px;
-    
-}
-
-.cont p{
-    font-size: 15px;
-    color: white;
-    text-align: center;
-    padding-block-end: 10px;
-}
-
-.funcionamento{
-    font-size: 10px;
-    color: white;
-    text-align: right;
-    position: relative;
-    top: -5px;
-    left: -100px;  
-}
-
-.pf{
-    color:white;
-    padding-block-end: 10px;
-    font-size: 13px;
-    text-align: right;
-    position: relative;
-    left: -100px;
-}
-
-.hf{
-    color: white;
-    padding-block-end: 15px;
-    position: relative;
-    left: -80px;
-    font-size: 14px;
-}
-
-.bt{
-    align-self: flex-start;
-    padding: 5px;
-    font-style: initial;
-    position: relative;
-    top: -5px;
-    left: 100px;
-    font-weight: bold;
-}
-
-.item a{
-    color:rgb(36, 37, 66);
-    padding: 5px;
-    font-size: 14px;
-}
-
-#links li{
-    align-items: center;
-}
-
-#links a{
-    color: rgb(255, 255, 255);
-    padding: 2px;
-}
-
-#conteudo {
-    grid-area: footer;
-    background:#04111b;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    top: -370px;
+    .content-footer {
+        display: grid;
+        background-color: var(--azul-marinho);
+        color: #ffffff;
+        height: 30vh;
+        grid-template-columns: repeat(12, 1fr);
+        font-family: var(--fonte-primaria);
+        font-weight: lighter;
     }
 
-.item {
-    height: 200px;
-    margin: 50px;
-    background: #04111b;
-    position: relative;
-    top: 2px;       
+    .btn, .titulo { 
+        margin: 0 0 30px 0;
+    }
+
+    .item-menu {
+        grid-column: 3 / 5;
+        align-self: center;
+    }
+
+    .item-contato {
+        grid-column: 6 / 8;
+        text-align: center;
+        align-self: center;
+    }
+
+    .item-end {
+        grid-column: 9 / 11;
+        text-align: end;
+        align-self: center;
+    }
+    
+    i {
+        margin: 10px 10px 0 0;
     }
 
 </style>
