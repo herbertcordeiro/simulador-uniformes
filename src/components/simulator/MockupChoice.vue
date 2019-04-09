@@ -1,6 +1,6 @@
 <template>
     <ul>
-        {{mockups}}
+        <img v-for="item in mockups" :key="item.id" :src="item.image">
     </ul>
 </template>
 
@@ -11,19 +11,24 @@ export default {
     name: "MockupChoice",
     data: function() {
         return {
-            mockups: []
+            mockups: [],
+            // path: 'volleyball/mockup-volleyball.png',
+            // img: require("@/assets/simulator/"+path)
         }
     },
     created: function() {
         axios
             .get("http://simulador-back.herokuapp.com/mockups")
             .then(response => {
-                console.log(response)
                 this.mockups = response.data;
+                this.mockups.forEach(item => {
+                    item.image = require("@/assets/simulator/"+item.name+"/"+item.image);
+                });
             })
             .catch(e => {
-                console.log("error");
+                console.log(e);
             });
     }
+
 }
 </script>
