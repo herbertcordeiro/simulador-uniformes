@@ -7,16 +7,16 @@
                 <h4>MAIS DETALHES</h4>
             </a>
         </div>
-        <div class="opcoes">        
-            <div class="det-simulador detalhes">
+        <div class="opcoes">
+            <a class="det-simulador detalhes" href="#">
                 <h3>SIMULADOR</h3>
-            </div>
-            <div class="det-catalogo detalhes">
+            </a>
+            <a class="det-catalogo detalhes" href="#">
                 <h3>CATÁLOGO</h3>
-            </div>
-            <div class="det-portfolio detalhes">
+            </a>
+            <a class="det-portfolio detalhes" href="#">
                 <h3>PORTFÓLIO</h3>
-            </div>
+            </a>
         </div>
     </div>
 </template>
@@ -53,14 +53,16 @@ export default {
         width: 130px;
         padding: 8px;
         margin: 6px 0 6px 0;
-        border: none;
-    }
-
-    .btn-detalhes h4 {
         font-family: var(--fonte-secundaria);
         font-weight: bold;
         text-align: center;
         color: var(--azul-marinho);
+    }
+
+    .btn-detalhes:hover {
+        background-color: rgba(5, 25, 35, 0);
+        color: #ffffff;
+        box-shadow: inset 0 0 0 3px #ffffff;
     }
 
     .opcoes {
@@ -90,4 +92,16 @@ export default {
     .det-portfolio {
         background-color: var(--azul-celeste);
     }
+
+    .detalhes:hover {
+        height: 6vh;
+        background-color: #ffffff;
+    }
+
+    .det-simulador:hover,
+    .det-catalogo:hover,
+    .det-portfolio:hover {
+        color: var(--azul-prusia);
+    }
+
 </style>

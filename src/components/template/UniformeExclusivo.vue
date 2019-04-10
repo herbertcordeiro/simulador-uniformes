@@ -26,7 +26,7 @@ export default {
         background-image: 
             radial-gradient(
             circle at bottom,
-            var(--azul-cobalto),
+            var(--azul-prusia),
             var(--azul-marinho)
         );
     }

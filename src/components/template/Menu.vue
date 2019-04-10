@@ -74,4 +74,9 @@ export default {
         color: #ffffff;
         text-decoration: none;
     }
+
+    li:hover {
+        border-bottom: 2.5px solid #ffffff;
+        padding-bottom: 31px;
+    }
 </style>

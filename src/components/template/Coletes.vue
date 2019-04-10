@@ -33,7 +33,7 @@ export default {
         background-image: 
             radial-gradient(
             circle at top,
-            var(--azul-cobalto),
+            var(--azul-prusia),
             var(--azul-marinho)
         );
     }
@@ -55,7 +55,4 @@ export default {
         font-weight: lighter;
     }
 
-    .titulo-coletes h4 {
-        color: var(--azul-cobalto);
-    }
 </style>

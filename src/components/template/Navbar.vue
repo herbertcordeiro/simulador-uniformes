@@ -25,7 +25,7 @@ export default {
         font-size: 0.9em;
         color: var(--azul-prusia);
         font-family: var(--fonte-primaria);
-        height: 30px;
+        height: 40px;
     }
     
     .contact {
@@ -43,7 +43,6 @@ export default {
         grid-column: 10;
         font-size: 1.4em;
         justify-self: end;
-        align-self: center;
     }
 
 </style>

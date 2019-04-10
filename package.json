@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "fs": "0.0.1-security",
+    "hover.css": "^2.3.2",
     "vue": "^2.5.2",
     "vue-carousel": "^0.18.0",
     "vue-router": "^3.0.1"
