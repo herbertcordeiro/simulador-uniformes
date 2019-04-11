@@ -1,9 +1,31 @@
 <template>
     <div class="container-portfolio">
-        <div class="titulo">
-            <h1>PORTFÓLIO</h1>
-        </div>
+        <h1 class="titulo">PORTFÓLIO</h1>
         <div class="content-primeiro-time">
+            <img class="primeiro-time" :src="primeiroTime">
+            <a href="#" class="btn-detalhes-times">
+                <h4>CONFIANCA F.C.</h4>
+            </a>
+        </div>
+        <div class="content-segundo-time">
+            <img class="primeiro-time" :src="primeiroTime">
+            <a href="#" class="btn-detalhes-times">
+                <h4>CONFIANCA F.C.</h4>
+            </a>
+        </div>
+        <div class="content-terceiro-time">
+            <img class="primeiro-time" :src="primeiroTime">
+            <a href="#" class="btn-detalhes-times">
+                <h4>CONFIANCA F.C.</h4>
+            </a>
+        </div>
+        <div class="content-quarto-time">
+            <img class="primeiro-time" :src="primeiroTime">
+            <a href="#" class="btn-detalhes-times">
+                <h4>CONFIANCA F.C.</h4>
+            </a>
+        </div>
+        <div class="content-quinto-time">
             <img class="primeiro-time" :src="primeiroTime">
             <a href="#" class="btn-detalhes-times">
                 <h4>CONFIANCA F.C.</h4>
@@ -26,28 +48,22 @@ export default {
 <style>
     .container-portfolio {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 100px 1fr;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: 100px 1fr 1fr;
     }
 
     .titulo {
-        grid-column: 6 / 9;
+        grid-column: 8;
         padding: 3vh 0 3vh 0;
         color: var(--azul-prusia);
         font-family: var(--fonte-secundaria);
-    }
-
-    .content-primeiro-time {
-        display: grid;
-        grid-column: 3 / 5;
-        grid-row: 2;
     }
 
     .primeiro-time {
         display: grid;
         align-self: center;
         justify-self: center;
-        width: 16vw;
+        width: 160px;
         transition: transform .2s;
     }
 
@@ -64,6 +80,7 @@ export default {
         border-radius: 5vh;
         margin: 1vh;
         padding: 1vh;
+        font-size: 0.8em;
     }
 
     .btn-detalhes-times:hover {
@@ -71,4 +88,35 @@ export default {
         color: var(--azul-prusia);;
         box-shadow: inset 0 0 0 3px var(--azul-prusia);
     }
+
+    .content-primeiro-time {
+        display: grid;
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .content-segundo-time  {
+        display: grid;
+        grid-column: 6;
+        grid-row: 2;
+    }
+
+    .content-terceiro-time  {
+        display: grid;
+        grid-column: 8;
+        grid-row: 2;
+    }
+
+    .content-quarto-time  {
+        grid-column: 10;
+        display: grid;
+        grid-row: 2;
+    }
+
+    .content-quinto-time  {
+        grid-column: 12;
+        display: grid;
+        grid-row: 2;
+    }
+
 </style>
