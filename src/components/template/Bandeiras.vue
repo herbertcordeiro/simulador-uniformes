@@ -1,5 +1,5 @@
 <template>
-    <div class="container-bandeiras" :style="{ backgroundImage: 'url(\'' + background + '\')' }">
+    <div tabindex='0' class="container-bandeiras" :style="{ backgroundImage: 'url(\'' + background + '\')' }">
         <div class="titulo-bandeiras">
             <h1>BANDEIRAS</h1>
             <h3>PERSONALIZE SUA BANDEIRA</h3>

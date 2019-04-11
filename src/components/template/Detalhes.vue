@@ -1,11 +1,11 @@
 <template>
   <div class="itens-disponiveis">
-    <div class="container-menor textWithBlurredBg">
+    <div tabindex='0' class="container-menor textWithBlurredBg">
       <img class="image-itens" :src="backgroundEscudo">
       <h1>ESCUDOS</h1>
       <h3>BORDADO | APLICADO | TRADICIONAL</h3>
     </div>
-    <div class="container-menor textWithBlurredBg">
+    <div tabindex='0' class="container-menor textWithBlurredBg">
       <img class="image-itens" :src="backgroundTecido">
       <h1>TERCIDOS</h1>
       <h3>DIVERSIDADE | QUALIDADE</h3>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container-uniformes">
+    <div tabindex='0' class="container-uniformes">
         <img class="titulo-uniforme" :src="tituloUniforme">
         <img class="exemplos-uniformes" :src="uniformes">
     </div>

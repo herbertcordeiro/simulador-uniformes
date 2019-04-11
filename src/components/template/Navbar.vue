@@ -1,11 +1,11 @@
 <template>
-    <div class="navbar">
-        <h4 class="contact">CENTRAL DE ATENDIMENTO</h4>
-        <h4 class="phone"><i class="fas fa-phone"></i> (83) 99634-1333</h4> 
-        <div class="social">
-            <i class="fab fa-facebook-square"></i>        
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter-square"></i>   
+    <div tabindex='0' class="navbar">
+        <h4 tabindex='0' class="contact">CENTRAL DE ATENDIMENTO</h4>
+        <h4 tabindex='0' class="phone"><i class="fas fa-phone"></i> (83) 99634-1333</h4> 
+        <div tabindex='0' class="social">
+            <i tabindex='0' class="fab fa-facebook-square"></i>        
+            <i tabindex='0' class="fab fa-instagram"></i>
+            <i  tabindex='0' class="fab fa-twitter-square"></i>   
         </div> 
     </div>
 </template>

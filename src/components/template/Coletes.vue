@@ -1,5 +1,5 @@
 <template>
-    <div class="container-coletes">
+    <div class="container-coletes" tabindex='0'>
         <img class="coletes" :src="coletes">
         <div class="titulo-coletes">
             <h1>COLETES</h1>
