@@ -4,7 +4,7 @@
         <nav class="option">
             <ul>
                 <li>
-                    <a href="#">INÍCIO</a>
+                    <a><router-link :to="{name:'Home'}">INÍCIO</router-link></a>
                 </li>
                 <li>
                     <a href="#">EMPRESA</a>

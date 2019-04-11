@@ -108,13 +108,13 @@ export default {
         grid-row: 2;
     }
 
-    .content-quarto-modelo  {
+    .content-quarto-modelo {
         grid-column: 10;
         display: grid;
         grid-row: 2;
     }
 
-    .content-quinto-modelo  {
+    .content-quinto-modelo {
         grid-column: 12;
         display: grid;
         grid-row: 2;

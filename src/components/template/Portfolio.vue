@@ -49,12 +49,12 @@ export default {
     .container-portfolio {
         display: grid;
         grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: 100px 1fr 1fr;
+        grid-template-rows: 140px 1fr 1fr;
     }
 
     .titulo {
         grid-column: 8;
-        padding: 3vh 0 3vh 0;
+        padding: 5vh 0 5vh 0;
         color: var(--azul-prusia);
         font-family: var(--fonte-secundaria);
     }
@@ -95,25 +95,25 @@ export default {
         grid-row: 2;
     }
 
-    .content-segundo-time  {
+    .content-segundo-time {
         display: grid;
         grid-column: 6;
         grid-row: 2;
     }
 
-    .content-terceiro-time  {
+    .content-terceiro-time {
         display: grid;
         grid-column: 8;
         grid-row: 2;
     }
 
-    .content-quarto-time  {
+    .content-quarto-time {
         grid-column: 10;
         display: grid;
         grid-row: 2;
     }
 
-    .content-quinto-time  {
+    .content-quinto-time {
         grid-column: 12;
         display: grid;
         grid-row: 2;
