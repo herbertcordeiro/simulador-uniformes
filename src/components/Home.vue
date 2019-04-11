@@ -23,11 +23,13 @@ import Detalhes from '@/components/template/Detalhes'
 import Newsletter from '@/components/template/Newsletter'
 import Footer from '@/components/template/Footer'
 import Rodape from '@/components/template/Rodape'
+import Portfolio from '@/components/template/Portfolio'
 
 export default {
     name: "Home",
     components: { 
-        MockupChoice, 
+        MockupChoice,
+        Portfolio,
         Merchandise, 
         UniformeExclusivo, 
         Simulador, 
@@ -36,7 +38,8 @@ export default {
         Detalhes,
         Newsletter, 
         Footer,
-        Rodape }
+        Rodape 
+    }
 }
 </script>
 
