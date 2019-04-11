@@ -1,6 +1,6 @@
 <template>
     <div class="container-catalogo">
-        <h1 class="titulo">CATÁLOGO</h1>
+        <h1 class="titulo-catalogo">CATÁLOGO</h1>
         <div class="content-primeiro-modelo">
             <img class="primeiro-modelo" :src="primeiroModelo">
             <a href="#" class="btn-detalhes-modelo">
@@ -46,14 +46,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .container-catalogo {
         display: grid;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: 140px 1fr 1fr;
     }
 
-    .titulo {
+    .titulo-catalogo {
         grid-column: 8;
         padding: 5vh 0 5vh 0;
         color: var(--azul-prusia);

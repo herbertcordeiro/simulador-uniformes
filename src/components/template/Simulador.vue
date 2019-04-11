@@ -3,9 +3,7 @@
         <div class="titulo-simulador">
             <h1>SIMULADOR</h1>
             <h3>PERSONALIZE SEU UNIFORME</h3>
-            <a href="#" class="btn-detalhes">
-                <h4>MAIS DETALHES</h4>
-            </a>
+            <a><router-link class="btn-detalhes" :to="{name:'MockupChoice'}"><h4>MAIS DETALHES</h4></router-link></a>
         </div>
         <div class="opcoes">
             <a class="det-simulador detalhes" href="#">

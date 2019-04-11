@@ -7,7 +7,7 @@
     </div>
     <div tabindex='0' class="container-menor textWithBlurredBg">
       <img class="image-itens" :src="backgroundTecido">
-      <h1>TERCIDOS</h1>
+      <h1>TECIDOS</h1>
       <h3>DIVERSIDADE | QUALIDADE</h3>
     </div>
   </div>

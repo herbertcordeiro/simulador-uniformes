@@ -15,19 +15,19 @@
         </div>
         <div class="item-contato">
             <div class="cont">
-                <p><i class="fas fa-phone"> </i>(83) 99634-1333</p>
-                <p><i class="far fa-envelope"> </i> padronniesporte@hotmail.com</p>
+                <p><i tabindex='0' class="fas fa-phone"> </i>(83) 99634-1333</p>
+                <p><i tabindex='0' class="far fa-envelope"> </i> padronniesporte@hotmail.com</p>
             </div>
         </div>
         <div class="item-end">
             <div>
-                <h3 class="titulo">ONDE ESTAMOS</h3>
+                <h3 tabindex='0' class="titulo">ONDE ESTAMOS</h3>
             </div>
-            <div><p class="pf">Av. João Suassuna, 67</p>
-                <p class="pf">Centro - CEP: 58345-000</p>
-                <p class="pf">Mari • Paraíba • Brasil</p>
+            <div><p tabindex='0' class="pf">Av. João Suassuna, 67</p>
+                <p tabindex='0' class="pf">Centro - CEP: 58345-000</p>
+                <p tabindex='0' class="pf">Mari • Paraíba • Brasil</p>
                 <br/>
-                <p class="funcionamento">
+                <p tabindex='0' class="funcionamento">
                     Seg à sexta das 8h às 17h30<br/>
                     Sábado das 8h às 12h00
                 </p>
@@ -37,13 +37,13 @@
         
 </template>
 
-<script>
+<script scoped>
 export default {
     name: "Footer"
 }
 </script>
 
-<style>
+<style scoped>
 
     .content-footer {
         display: grid;

@@ -3,9 +3,7 @@
         <h1 class="titulo">PORTFÓLIO</h1>
         <div class="content-primeiro-time">
             <img class="primeiro-time" :src="primeiroTime">
-            <a href="#" class="btn-detalhes-times">
-                <h4>CONFIANCA F.C.</h4>
-            </a>
+            <a><router-link class="btn-detalhes-times" :to="{name:'ConfiancaFC'}"><h4>CONFIANCA F.C.</h4></router-link></a>
         </div>
         <div class="content-segundo-time">
             <img class="primeiro-time" :src="primeiroTime">

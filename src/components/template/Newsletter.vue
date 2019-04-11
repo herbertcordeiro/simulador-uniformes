@@ -3,9 +3,7 @@
         <div class="content-newsletter">
             <img :src="newsletter">
         </div>
-        <div class="enviar-email">
-            <input type="email"> <a href="#">Enviar</a>
-        </div>
+
     </div>
 </template>
 

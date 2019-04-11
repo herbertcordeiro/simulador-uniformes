@@ -30,5 +30,15 @@ export default new Router({
       name: 'Catalogo',
       component: Catalogo
     },
+    {
+      path: '/catalogo/modelo-01',
+      name: 'Modelo01',
+      component: Catalogo
+    },
+    {
+      path: '/portfolio/confianca-fc',
+      name: 'ConfiancaFC',
+      component: Portfolio
+    },
   ]
 })

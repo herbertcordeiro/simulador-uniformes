@@ -1,7 +1,7 @@
 <template>
     <div tabindex='0' class="container-uniformes">
-        <img class="titulo-uniforme" :src="tituloUniforme">
-        <img class="exemplos-uniformes" :src="uniformes">
+        <img tabindex='0' class="titulo-uniforme" :src="tituloUniforme">
+        <img tabindex='0' class="exemplos-uniformes" :src="uniformes">
     </div>
 </template>
 

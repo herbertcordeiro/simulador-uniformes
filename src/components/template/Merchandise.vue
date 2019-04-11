@@ -1,11 +1,11 @@
 <template>
     <div class="merchandise">
-        <img class="entrega-icon" :src="viaJs">   
-            <h3 class="entrega">ENTREGAMOS PARA TODO BRASIL</h3>
-        <img class="pagamento-icon" :src="viaJs2"> 
-            <h3 class="juros">ATÉ 6x SEM JUROS NO CARTÃO</h3>
-        <img class="seguranca-icon" :src="viaJs3">
-            <h3 class="seguranca">COMPRA 100% SEGURA</h3> 
+        <img tabindex='0' class="entrega-icon" :src="viaJs">   
+            <h3 tabindex='0' class="entrega">ENTREGAMOS PARA TODO BRASIL</h3>
+        <img tabindex='0' class="pagamento-icon" :src="viaJs2"> 
+            <h3 tabindex='0' class="juros">ATÉ 6x SEM JUROS NO CARTÃO</h3>
+        <img tabindex='0' class="seguranca-icon" :src="viaJs3">
+            <h3 tabindex='0' class="seguranca">COMPRA 100% SEGURA</h3> 
     </div>
 </template>
 
