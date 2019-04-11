@@ -13,7 +13,7 @@
                     <a href="#">CONTATO</a>
                 </li>
                 <li>
-                    <a href="#">CATÁLOGO</a>
+                    <a><router-link :to="{name:'Catalogo'}">CATÁLOGO</router-link></a>
                 </li>
                 <li>
                     <a><router-link :to="{name:'Portfolio'}">PORTFÓLIO</router-link></a>

@@ -24,12 +24,14 @@ import Newsletter from '@/components/template/Newsletter'
 import Footer from '@/components/template/Footer'
 import Rodape from '@/components/template/Rodape'
 import Portfolio from '@/components/template/Portfolio'
+import Catalogo from '@/components/template/Catalogo'
 
 export default {
     name: "Home",
     components: { 
         MockupChoice,
         Portfolio,
+        Catalogo,
         Merchandise, 
         UniformeExclusivo, 
         Simulador, 
