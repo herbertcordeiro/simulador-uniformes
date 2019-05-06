@@ -94,7 +94,7 @@ export default {
     },
     created: function() {
         axios
-            .get("http://simulador-back.herokuapp.com/mockups")
+            .get("https://simulador-back.herokuapp.com/mockups")
             .then(response => {
                 this.mockups = response.data;
                 this.mockups.forEach(item => {

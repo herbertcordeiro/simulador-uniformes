@@ -31,12 +31,12 @@
             <button class="parte-uniforme" >CALÇÃO</button>
             <button class="parte-uniforme" >MEIÃO</button>
             <div class="cores-detalhes">
-                <button class="cor1">COR 1</button>
-                <button class="cor2">COR 2</button>
-                <button class="cor3">COR 3</button>
-                <button class="cor4">COR 4</button>
+                <button v-on:click="option(1)" class="cor1">COR 1</button>
+                <button v-on:click="option(2)" class="cor2">COR 2</button>
+                <button v-on:click="option(3)" class="cor3">COR 3</button>
+                <button v-on:click="option(4)" class="cor4">COR 4</button>
                 <div id="cores-simulador">
-                    
+                    <div id="choices"></div>
                 </div>
             </div>
         </div>
@@ -53,8 +53,45 @@
 </template>
 
 <script>
+    const colors = ["#FFFFFF", "#000000	", "#000080", "#006400", "#D2691E", "#FF0000", "#FF1493", "#FF00FF"];
+    let item;
+    let choices = document.getElementById('choices');
+    console.log(choices)
+    let details1 = document.getElementById('details-01');
+    let details2 = document.getElementById('details-02');
+    let details3 = document.getElementById('details-03');
+    let details4 = document.getElementById('details-04');
+    let details5 = document.getElementById('details-05');
+    colors.forEach( (color) =>{
+        let button = document.createElement('button');
+        button.value = color;
+        button.type = 'button';
+        button.style.backgroundColor = color;
+        button.addEventListener('click', handler(button));
+        // choices.appendChild(button);
+    });
+    function handler(el, value) {
+        return () => {
+            if(item == 1) { 
+                details1.style.fill = el.value;
+            } else if(item == 2) {
+                details2.style.fill = el.value;
+            } else if(item == 3) {
+                details3.style.fill = el.value;
+            } else if(item == 4) {
+                details4.style.fill = el.value;
+            } else if(item == 5) {
+                details5.style.fill = el.value;
+            }
+        }
+    }
 export default {
     name: 'Soccer',
+    methods: {
+        option: function(value) {
+        this.item = value;
+        }
+    }
 }
 </script>
 
