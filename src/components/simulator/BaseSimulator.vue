@@ -1,27 +1,5 @@
 <template>
-    <div class="container-soccer">
-        <div class="menu-simulador">
-            <ul>
-                <li>
-                    <a href="#">CORES</a>
-                </li>
-                <li>
-                    <a href="#">ESCUDO</a>
-                </li>
-                <li>
-                    <a href="#">MANGA</a>
-                </li>
-                <li>
-                    <a href="#">GOLA</a>
-                </li>
-                <li>
-                    <a href="#">PATROCÍNIO</a>
-                </li>
-                <li>
-                    <a href="#">NÚMERO</a>
-                </li>
-            </ul>
-        </div>
+    <div class="container-base">
         <div class="descricao-menu">
             <div class="titulo-select">            
                 <p>SELECIONE AS CORES DO UNIFORME</p>
@@ -87,7 +65,7 @@
         }
     }
 export default {
-    name: 'Soccer',
+    name: 'BaseSimulator',
     data: function() {
         return {
             shirts: [],
@@ -137,7 +115,7 @@ export default {
 
 <style>
 
-.container-soccer {
+.container-base {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;

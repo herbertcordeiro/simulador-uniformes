@@ -14,7 +14,7 @@
 
 <script>
 import MockupChoice from '@/components/simulator/MockupChoice'
-import Soccer from '@/components/simulator/Soccer'
+import BaseSimulator from '@/components/simulator/BaseSimulator'
 import Simulador from '@/components/template/Simulador'
 import Merchandise from '@/components/template/Merchandise'
 import UniformeExclusivo from '@/components/template/UniformeExclusivo'
@@ -31,7 +31,7 @@ export default {
     name: "Home",
     components: { 
         MockupChoice,
-        Soccer,
+        BaseSimulator,
         Portfolio,
         Catalogo,
         Merchandise, 

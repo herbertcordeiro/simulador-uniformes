@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import MockupChoice from '@/components/simulator/MockupChoice'
-import Soccer from '@/components/simulator/Soccer'
+import BaseSimulator from '@/components/simulator/BaseSimulator'
 import Portfolio from '@/components/template/Portfolio'
 import Catalogo from '@/components/template/Catalogo'
 
@@ -17,7 +17,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/mockups',
+      path: '/simulador',
       name: 'MockupChoice',
       component: MockupChoice
     },
@@ -44,7 +44,7 @@ export default new Router({
     {
       path: '/simulador/futebol',
       name: 'Futebol',
-      component: Soccer
+      component: BaseSimulator
     },
   ]
 })

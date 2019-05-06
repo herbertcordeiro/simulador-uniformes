@@ -12,9 +12,12 @@
 </template>
 
 <style scoped>
+
     .main {
         text-align: center;
+        padding: 60px;
     }
+
     .select-mockup {
         display: grid;
         width: 80%;
@@ -23,14 +26,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         text-transform: uppercase;
         grid-column-gap: 2%;
-
     }
+
     .container-mockup {
-        width: 65%;
+        width: 70%;
         margin: 0 auto;
-        border-width: 2px;
-        border-color: darkgray;
-        border-style: solid;
+        border: 2px solid var(--azul-prusia);
+        border-radius: 10px;
+        padding-top: 20px;
     }
 
     .mockup-img {
@@ -43,8 +46,9 @@
     }
 
     .title {
-        color: var(--azul-marinho);
+        color: var(--azul-prusia);
         font-family: var(--fonte-primaria);
+        padding: 4px;
     }
 
     .zoom-img {
@@ -70,16 +74,11 @@
         color: rgb(84, 83, 83);
     }
 
-    .zoom-img h3 {
-        top: 55%;
-        font-weight: lighter;
-    }
-
     .zoom-img:hover :not(img) {
         opacity: 10;
     }
-</style>
 
+</style>
 
 <script>
 import axios from 'axios'
