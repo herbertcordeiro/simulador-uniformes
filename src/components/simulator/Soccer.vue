@@ -53,6 +53,7 @@
 </template>
 
 <script>
+    import axios from 'axios'
     const colors = ["#FFFFFF", "#000000	", "#000080", "#006400", "#D2691E", "#FF0000", "#FF1493", "#FF00FF"];
     let item;
     let choices = document.getElementById('choices');
@@ -87,11 +88,50 @@
     }
 export default {
     name: 'Soccer',
+    data: function() {
+        return {
+            shirts: [],
+            shorts: [],
+            socks: []
+        }
+    },
     methods: {
         option: function(value) {
         this.item = value;
         }
-    }
+    },
+    created: function() {
+        axios
+            .get("https://simulador-back.herokuapp.com/shirts")
+            .then(response => {
+                response.data.forEach(item => {
+                    this.shirts.push(item.svg)
+                });
+            })
+            .catch(e => {
+                console.log(e);
+            });
+        axios
+            .get("https://simulador-back.herokuapp.com/shorts")
+            .then(response => {
+                response.data.forEach(item => {
+                    this.shorts.push(item.svg)
+                });
+            })
+            .catch(e => {
+                console.log(e);
+            });
+        axios
+            .get("https://simulador-back.herokuapp.com/socks")
+            .then(response => {
+                response.data.forEach(item => {
+                    this.socks.push(item.svg)
+                });
+            })
+            .catch(e => {
+                console.log(e);
+            });
+    },
 }
 </script>
 
