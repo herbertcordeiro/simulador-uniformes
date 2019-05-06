@@ -43,8 +43,7 @@ export default {
         grid-column: 10;
         font-size: 1.4em;
         justify-self: end;
-                align-self: center;
-
+        align-self: center;
     }
 
 </style>
