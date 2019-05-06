@@ -1,37 +1,18 @@
 <template>
-    <div class="container-base">
-        <div class="descricao-menu">
-            <div class="titulo-select">            
-                <p>SELECIONE AS CORES DO UNIFORME</p>
-            </div>
-            <p class="clique-aqui">CLIQUE NAS PEÇAS ABAIXO PARA MUDAR A COR</p>
-            <button class="parte-uniforme" >CAMISA</button>
-            <button class="parte-uniforme" >CALÇÃO</button>
-            <button class="parte-uniforme" >MEIÃO</button>
-            <div class="cores-detalhes">
-                <button v-on:click="option(1)" class="cor1">COR 1</button>
-                <button v-on:click="option(2)" class="cor2">COR 2</button>
-                <button v-on:click="option(3)" class="cor3">COR 3</button>
-                <button v-on:click="option(4)" class="cor4">COR 4</button>
-                <div id="cores-simulador">
-                    <div id="choices"></div>
-                </div>
-            </div>
-        </div>
-        <div class="mockups-simulador">
-            <div class="frente"></div>
-            <div class="costa"></div>
-        </div>
-        <div class="opcoes-simulador">
-            <div class="salvar"></div>
-            <div class="compartilhar"></div>
-            <div class="orcamento"></div>
-        </div>
+    <div class="container-base-simulator">
+        <OptionsSimulator />
+        <MockupSport />
+        <OptionsUser />
     </div>
 </template>
 
 <script>
     import axios from 'axios'
+
+    import OptionsSimulator from '@/components/simulator/OptionsSimulator'
+    import MockupSport from '@/components/simulator/MockupSport'
+    import OptionsUser from '@/components/simulator/OptionsUser'
+
     const colors = ["#FFFFFF", "#000000	", "#000080", "#006400", "#D2691E", "#FF0000", "#FF1493", "#FF00FF"];
     let item;
     let choices = document.getElementById('choices');
@@ -66,6 +47,11 @@
     }
 export default {
     name: 'BaseSimulator',
+    components: { 
+        OptionsSimulator,
+        MockupSport,
+        OptionsUser
+    },
     data: function() {
         return {
             shirts: [],
@@ -115,73 +101,12 @@ export default {
 
 <style>
 
-.container-base {
+.container-base-simulator {
     display: grid;
+    height: 100vh;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "options-simulator mockup options-user";
     grid-template-rows: 1fr;
-    justify-items: center;
-}
-
-.descricao-menu {
-    display: grid;
-    grid-column: 1;
-    margin: 60px;
-    border-radius: 20px;
-    width: 360px;
-    height: 500px;
-    text-align: center;
-}
-
-.clique-aqui {
-    font-family: var(--fonte-secundaria);
-    font-size: 0.7em;
-    color: var(--azul-marinho);
-}
-
-.titulo-select {
-    background-color: var(--azul-prusia);
-    border-radius: 20px 20px 0 0;
-    padding: 20px;
-    height: 16px;
-    color: #ffffff;
-    font-family: var(--fonte-secundaria);
-    font-size: 0.9em;
-}
-
-.cores-detalhes {
-    border: solid 1px black;
-    height: 160px;
-    width: 360px;
-}
-
-.cores-detalhes button {
-    padding: 10px;
-    width: 82px;
-    border: none;
-    background-color: var(--azul-marinho);
-    color: #ffffff;
-    border-radius: 10px 0;
-}
-
-.parte-uniforme {
-    height: 60px;
-    border: none;
-    border-radius: 80px;
-    background-color: var(--azul-prusia);
-    font-family: var(--fonte-primaria);
-    font-size: 1em;
-    color: #ffffff;
-}
-
-.opcoes-simulador {
-    display: grid;
-    grid-column: 3;
-    margin: 60px;
-    border-radius: 20px;
-    width: 360px;
-    height: 300px;
-    text-align: center;
-    border: 1px solid;
 }
 
 </style>

@@ -1,5 +1,7 @@
 <template>
     <div class="home">
+        <MockupChoice />
+        <BaseSimulator />
         <Simulador />
         <Merchandise />
         <UniformeExclusivo />
@@ -29,7 +31,7 @@ import Catalogo from '@/components/template/Catalogo'
 
 export default {
     name: "Home",
-    components: { 
+    components: {
         MockupChoice,
         BaseSimulator,
         Portfolio,
