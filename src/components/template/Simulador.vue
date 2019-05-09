@@ -7,7 +7,7 @@
         </div>
         <div class="opcoes">
             <a class="det-simulador detalhes" href="#">
-                <h3>SIMULADOR</h3>
+                <router-link class="btn-detalhes" :to="{name:'MockupChoice'}"><h3>SIMULADOR</h3></router-link>
             </a>
             <a class="det-catalogo detalhes" href="#">
                 <h3>CATÁLOGO</h3>
