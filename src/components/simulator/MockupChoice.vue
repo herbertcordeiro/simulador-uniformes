@@ -3,6 +3,7 @@
         <h2 class="title">SIMULADOR DE UNIFORMES PADRONNI</h2>
         <h3 class="title">SELECIONE UM ESPORTE PARA INICIAR</h3>
         <div class="select-mockup">
+            
             <div tabindex='0' v-on:click="selectMockup(item.name)" class="container-mockup zoom-img" v-for="item in mockups" :key="item.id">
                 <h2 class="title">{{item.name}}</h2>
                 <img class="mockup-img" :src="item.image">
@@ -82,6 +83,7 @@
 
 <script>
 import axios from 'axios'
+import Router from 'vue-router'
 
 export default {
     name: "MockupChoice",
@@ -109,6 +111,7 @@ export default {
       if (event) {
         this.selected = selected
       }
+      this.$router.push('/simulador/futebol');
     }
   }
 
