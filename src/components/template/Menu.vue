@@ -58,25 +58,25 @@ export default {
         font-size: 0.9em;
     }
 
-    ul {
+    .menu.ul {
         padding: 0px;
         margin: 0px;
         list-style: none;
     }
 
-    li { 
+    .menu.li { 
         display: inline; 
     }
 
-    a {
-        padding: 2px 5px;
-        display: inline-block;
-        color: #ffffff;
-        text-decoration: none;
+    .menu.a {
+        padding:  2px 5px;  
+        display:  inline-block;
+        color:  #ffffff;
+        text-decoration:  none;
     }
 
     li:hover {
-        border-bottom: 2.5px solid #ffffff;
-        padding-bottom: 31px;
+        border-bottom:  2.5px solid #ffffff;
+        padding-bottom:  31px;
     }
 </style>

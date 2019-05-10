@@ -77,7 +77,7 @@ export default {
         align-self: center;
     }
     
-    i {
+    .item.i {
         margin: 10px 10px 0 0;
     }
 </style>
