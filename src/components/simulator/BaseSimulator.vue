@@ -104,7 +104,7 @@ export default {
 .container-base-simulator {
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1.6fr 1fr;
     grid-template-areas: "options-simulator mockup options-user";
     grid-template-rows: 1fr;
 }

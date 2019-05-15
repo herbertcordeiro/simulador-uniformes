@@ -1,7 +1,5 @@
 <template>
     <div class="home">
-        <MockupChoice />
-        <BaseSimulator />
         <Simulador />
         <Merchandise />
         <UniformeExclusivo />

@@ -82,6 +82,7 @@
 
 <script>
 import axios from 'axios'
+import Router from 'vue-router'
 
 export default {
     name: "MockupChoice",
@@ -109,6 +110,7 @@ export default {
       if (event) {
         this.selected = selected
       }
+        this.$router.push('/simulador/futebol');
     }
   }
 
